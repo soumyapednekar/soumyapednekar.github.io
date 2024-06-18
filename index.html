@@ -6,6 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+		<style>
+			.type h1 {
+				color: #100202;
+				font-size: 35px;;
+				font-family: monospace;
+				overflow: hidden; /* Ensures the content is not revealed until the animation */
+				border-right: .15em solid rgb(227, 82, 135) ; /* The typwriter cursor */
+				white-space: nowrap; /* Keeps the content on a single line */
+				letter-spacing: .15em; /* Adjust as needed */
+				animation: 
+					typing 3.5s steps(44) 1s 1 normal both,
+					blink-caret .5s steps(44) infinite normal;
+				}
+
+				/* The typing effect */
+				@keyframes typing {
+				from { width: 0 }
+				to { width: 100% }
+				}
+
+				/* The typewriter cursor effect */
+				@keyframes blink-caret {
+				from, to { border-color: transparent }
+				100% { border-color: rgb(227, 82, 135) }
+				}
+		</style>
 	</head>
 	
 	<body class="is-preload">
@@ -25,19 +53,23 @@
 					<div id="main">
 
 						<!-- Me -->
+						
 							<article id="home" class="panel intro">
-								<header>
-									<h1> Soumya Pednekar </h1>
-									<h3><a href="" class="typewrite" data-period="2000" data-type='[ "Hi, soumya here.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-										<span class="wrap"></span>
-									  </a>
-									</h3>
-								</header>
+								
+									<header>
+										<div class="type"> 
+											<h1> hi,soumya here.</h1>
+										</div>
+										<p> I'm currentlt studying master in Information systems. At UMBC</p>
+									</header>
+							
+								
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
 									<img src="images/soumya.jpg" alt="" />
 								</a>
 							</article>
+						
 
 						<!-- Work -->
 							<article id="work" class="panel">
