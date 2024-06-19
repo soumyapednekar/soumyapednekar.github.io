@@ -2154,23 +2154,7 @@ input, select, textarea {
 							margin: 0.25em 0 0 0;
 						}
 					}
-				@media screen and (max-width: 736px) {
-
-							#main > .panel.intro .h1 {
-								height: 20em;
-							}
-		
-							#main > .panel.intro header {
-								padding: 2.75em 2em 2.5em 2em;
-							}
-		
-								#main > .panel.intro header p {
-									font-size: 1em;
-									margin: 0.25em 0 0 0;
-								}
-		
-				}
-
+				
 /* Footer */
 
 	#footer {
