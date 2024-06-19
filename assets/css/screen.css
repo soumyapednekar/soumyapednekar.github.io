@@ -1,0 +1,45 @@
+
+.type {
+    border: 1px ;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+}
+
+.type span {
+    font-family: 'Times New Roman', Times, serif;
+    color: #100202;
+    font-size: 30px;;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(227, 82, 135) ; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(54) 1s 1 normal both,
+        blink-caret .5s steps(54) infinite normal;
+    text-align: start;
+
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    100% { border-color: rgb(227, 82, 135) }
+    }
+
+    @media only screen and (max-width: 500px){
+        .type span{
+            font-size: 15px;
+        }
+        .intro
+        {
+            font-size: 10px;
+        }
+    }
