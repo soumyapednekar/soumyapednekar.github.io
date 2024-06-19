@@ -9,7 +9,17 @@
 
 
 		<style>
+			
+			.type {
+				border: 1px ;
+				display: flex;
+				flex-direction: row;
+				align-items: left;
+				justify-content: left;
+			}
+
 			.type h1 {
+				font-family: 'Times New Roman', Times, serif;
 				color: #100202;
 				font-size: 35px;;
 				font-family: monospace;
@@ -20,12 +30,14 @@
 				animation: 
 					typing 3.5s steps(44) 1s 1 normal both,
 					blink-caret .5s steps(44) infinite normal;
+				text-align: start;
+
 				}
 
 				/* The typing effect */
 				@keyframes typing {
 				from { width: 0 }
-				to { width: 100% }
+				to { width: 65% }
 				}
 
 				/* The typewriter cursor effect */
@@ -35,7 +47,6 @@
 				}
 		</style>
 	</head>
-	
 	<body class="is-preload">
 
 		<!-- Wrapper-->
@@ -44,10 +55,12 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Project</span></a>
 						<!--<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>-->
+						<a href="mailto:soumyap1@umbc.edu" class="icon solid fa-envelope"><span>Contact</span></a>
 					</nav>
+
+					
 
 				<!-- Main -->
 					<div id="main">
@@ -58,9 +71,18 @@
 								
 									<header>
 										<div class="type"> 
-											<h1> hi,soumya here.</h1>
+											<h1> hi, soumya here.</h1>
 										</div>
-										<p> I'm currentlt studying master in Information systems. At UMBC</p>
+										<div class="intro">
+											<p style="font-size: 25px; font-family: 'Times New Roman', Times, serif;"> 
+												I'm a Master's student in Information Systems at UMBC.
+												With a Bachelor's in Information Technology, I authored the research paper "ChatGPT Opportunities
+												and Challenges," presented at V-Search, a national conference on technology and innovation. 
+												Beyond my studies, I love exploring new places and experiencing different cultures. 
+												I'm always open to new opportunities and connections!</p>										</div>
+										<div style="float: right;">
+											<a heref="download" >Resume</a>
+										</div>
 									</header>
 							
 								
@@ -76,41 +98,53 @@
 								<header>
 									<h2>Projects</h2>
 								</header>
-								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
-								</p>
+								<ul style="font-size: 25px; font-family: 'Times New Roman', Times, serif;">
+									<b>Here are some technologies I have been working with:
+											<li style="align-items: right;">Python</li>
+											<li>JavaScript</li>
+											<li>Power BI</li>
+											<li>Firebase</li>
+											<li>Django</li></b>
+											<!--<li></li> , , PL/SQL, , 
+													<li></li>
+
+													<li></li><li></li>
+													<li></li>
+													<li></li>
+													<li></li>
+													<li></li>-->
+								</ul>
+								
 								<section>
 									<div class="row">
-										<!-- turn col-6 to change the size of square box -->
-										<div class="col-start-1 col-end-7 ">
-											<a href="https://github.com/soumyapednekar/sentiment_analysis/tree/main" class="image fit"><img src="images/sentiment_analysis.jpg" alt=""></a>
-											<p> <b>In the rapidly evolving landscape of e-commerce, businesses face the challenge of 
+										<div class="col-5 col-6-medium col-12-small ">
+											<a target="_blank" href="https://github.com/soumyapednekar/sentiment_analysis/tree/main" class="image fit"><img src="images/sentiment_analysis.jpg" alt=""></a>
+											<p style="font-size: 15px; justify-content: flex-start;">
+												 <b>In the rapidly evolving landscape of e-commerce, businesses face the challenge of 
 												harnessing the wealth of customer sentiments embedded within online reviews to drive informed decision
 												making. The proliferation of product reviews on platforms like Amazon presents a double-edged sword: 
 												while these reviews offer invaluable insights into consumer preferences, the sheer volume and diversity of 
 												data make it difficult for businesses to extract meaningful and actionable insights efficiently.</b></p>
 										</div>
-										<div class="col-start-1 col-end-7 ">
-											<a href="https://github.com/soumyapednekar/spotify_music_recommendation/tree/main" class="image fit"><img src="images/spotify.jpg" alt=" Music"></a>
+										<div class="col-5 col-6-medium col-12-small">
+											<a target="_blank" href="https://github.com/soumyapednekar/spotify_music_recommendation/tree/main" class="image fit"><img src="images/spotify.jpg" alt=" Music"></a>
 											<br>
-											<p><b> In recent years, personal recommendations seem to attract audience 
+											<p  style="font-size: 20px;justify-content: flex-start;"><b> In recent years, personal recommendations seem to attract audience 
 												lucratively more than abstract recommendations. This analysis is 
 												based on personal experiences of wanting to have more curated 
 												recommendation for songs as they have become part and parcel of our 
 												daily lives.	</b></p>
 										</div>
 										<div class="col-start-1 col-end-7 ">
-											<a href="https://github.com/soumyapednekar/plsqlproject" class="image fit"><img src="images/pl_sql.jpg" alt=""></a>
-											<br><p><b>A comprehensive SQL script for an online shopping database system, covering table creation, 
+											<a target="_blank" href="https://github.com/soumyapednekar/plsqlproject" class="image fit"><img src="images/pl_sql.jpg" alt=""></a>
+											<br><p style="font-size: 20px; justify-content: flex-start;"><b>A comprehensive SQL script for an online shopping database system, covering table creation, 
 											relationship management, and sample data population for customers, products, orders, payments, and more.
 											Designed to streamline e-commerce operations with efficient data storage and retrieval. 
 											Features an entity-relationship diagram for visualizing the database structure.</b></p>
 										</div>
 										
 										<div class="col-start-1 col-end-7 ">
-											<a href="https://github.com/soumyapednekar/superstore_sales_analysis" class="image fit"><img src="images/superstore.jpg" alt=""></a>
+											<a target="_blank" href="https://github.com/soumyapednekar/superstore_sales_analysis" class="image fit"><img src="images/superstore.jpg" alt=""></a>
 											<br>
 											<p><b>To analyze the superstore’s sales performance.
 												 It aims to identify trends,strengths, and weaknesses within the sales data to recommend
