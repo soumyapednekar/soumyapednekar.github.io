@@ -160,3 +160,12 @@
         grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
     }
 }
+
+/*
+.resumedoc a {
+    border: 1px solid;
+    display: flex;
+   
+    text-align: right;
+}
+    */
