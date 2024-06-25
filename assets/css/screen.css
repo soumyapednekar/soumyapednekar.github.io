@@ -106,7 +106,7 @@
 
 .tech-stack 
 {   display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-template-columns: 1fr 4fr; /* Two columns with equal width */
     gap: 10px; /* Space between the items */
     list-style-type: none; /* Remove default list styling */
     padding: 0;
