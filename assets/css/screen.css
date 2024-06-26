@@ -117,6 +117,8 @@
     display: flex; /* Flexbox to align items horizontally */
     align-items: center; /* Center items vertically */
     padding: 5px 0; /* Padding for list items */
+    float: center;
+
 }
 
 .tech-stack li::before
@@ -133,26 +135,34 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-    gap: 20px; /* Space between the grid items */
+    border: 2px solid;
+    grid-template-columns: 2fr 2fr; /* Two columns with equal width */
+    gap: 5px; /* Space between the grid items */
     padding: 20px;
 }
 
 .grid-item {
-    padding: 15px;
-    border-radius: 8px;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .grid-item img {
-    width: 100%; /* Make images responsive */
-    border-radius: 10px;
+    border: 1px solid;
+    
+
+    width: 80%; /* Make images responsive */
+    border-radius: 50px;
 }
 
-.description {
-    font-size: 15px; /* Font size for the description */
+.description> h3 {
+    font-size: 1px; /* Font size for the description */
     justify-content: flex-start; /* Align text to the start */
     margin-top: 10px;
-    text-align: justify
+    text-align: center;
+
+
 }
 
 @media (max-width: 768px) {
@@ -169,3 +179,232 @@
     text-align: right;
 }
     */
+
+
+
+    /* Effect project
+
+$font-stack'Raleway', Arial, sans-serif
+
+$black-color: #2C303A
+$white-color: white
+
+@mixin d-flex-c($rc: unset, $jc: center, $ai: center)
+  display: flex
+  flex-direction: $rc
+  justify-content: $jc
+  align-items: $ai
+@mixin size($w, $h: $w)
+  width: $w
+  height: $h
+@mixin transition($value)
+  transition: $value
+  -o-transition: $value
+  -moz-transition: $value
+  -webkit-transition: $value
+
+*, *::before, *::after
+  box-sizing: border-box
+
+body
+  @include d-flex-c(column)
+  font-family: $font-stack
+  color: $white-color
+  background-color: $black-color
+  min-height: 95vh
+  cursor: default
+.container
+  @include d-flex-c(column)
+  flex-wrap: wrap
+
+
+/* Effect Block & Title 
+.effect
+  @include d-flex-c
+  flex-wrap: wrap
+  margin: 40px 0
+  h1
+    margin: 0
+    opacity: .4
+    text-align: center
+    width: 100%
+    font-size: 1.8rem
+
+/* Basic Settings of the Card 
+.card
+  @include d-flex-c(column, flex-start, flex-start)
+  @include size(300px, 350px)
+  position: relative
+  overflow: hidden
+  margin: 28px
+  padding: 24px
+  border-radius: 20px
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .35)
+  cursor: pointer
+  &::before, &::after
+    @include transition((all .3s, opacity .25s ease-in-out, transform .35s ease-in-out))
+  .overlay
+    @include transition(all .35s ease-in-out)
+    position: absolute
+    inset: 0
+    opacity: 0
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.85))
+    z-index: -1
+  img
+    @include size(100%)
+    @include transition(all .3s)
+    position: absolute
+    inset: 0
+    object-fit: cover
+    z-index: -1
+    border-radius: 20px
+  h3, p
+    @include transition((opacity .25s ease-in-out, transform .4s))
+    margin: 0
+  h3
+    opacity: .9
+    font-weight: lighter
+    font-size: 1.8rem
+    line-height: 1.4em
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 80%)
+    span
+      font-weight: 800
+    text-transform: capitalize
+  p
+    opacity: .75
+    font-size: 1rem
+  button
+    @include transition(background-color .3s)
+    margin-top: 1rem
+    padding: 0.5rem 1.25rem
+    font-weight: bold
+    font-size: 0.6rem
+    text-transform: uppercase
+    color: $white-color
+    background-color: darken($black-color, 60%)
+    border: none
+    cursor: pointer
+    &:hover
+      background-color: darken($black-color, 10%)
+    
+/* Effect 11 - Lycoris
+.lycoris .card
+  justify-content: flex-end
+  &:hover
+    img
+      filter: blur(2px) saturate(1.6)
+      transform: scale(1.02)
+    p
+      opacity: 1
+      transform: none
+    h3
+      &::before
+        opacity: 1
+        transform: none
+    p
+      opacity: .7    
+  h3{
+    position: relative
+    overflow: hidden
+    padding-bottom: 8px
+    width: 100%
+    &::before
+      @include transition((opacity .25s ease-in-out, transform .35s ease-in-out))
+      content: ''
+      position: absolute
+      inset: 0
+      opacity: 0
+      border-bottom: 2px solid $white-color
+      transform: translateX(calc(-100% - 30px))
+  }
+  p
+    opacity: 0
+    padding-top: 16px
+    height: 50%
+    transform: translateX(70px)
+    */
+
+
+    /* pproject card */
+/* Grid container for project cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project card */
+.card {
+    max-width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.card h3 {
+    color: #fff;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.2);
+}
+
+.card-content {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-content {
+    bottom: -20px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-content a {
+    display: inline-block;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-content a:hover {
+    background-color: #555;
+}
