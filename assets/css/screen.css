@@ -408,3 +408,10 @@ body
 .card-content a:hover {
     background-color: #555;
 }
+
+
+@media (max-width: 1200px) {
+    .project-grid{
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    }
+}
