@@ -97,11 +97,22 @@
     }
 
 
+ 
+
 .projects h2{
-  padding-left: 50px;
+  padding-left: 10px;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 
+}
+
+
+   
+/* Project  descriptio  */
+.proj-des{
+    position:relative;
+     left: 30px; 
+     
 }
 
 .tech-stack 
@@ -109,8 +120,10 @@
     grid-template-columns: 1fr 4fr; /* Two columns with equal width */
     gap: 10px; /* Space between the items */
     list-style-type: none; /* Remove default list styling */
-    padding: 0;
+    padding: 10px;
     margin: 20px; /* Margin around the list */
+    position:relative;
+     left: 20px; 
 }
 
 .tech-stack li{
@@ -170,6 +183,7 @@
         grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
     }
 }
+
 
 /*
 .resumedoc a {
@@ -394,7 +408,7 @@ body
 
 .card-content a {
     display: inline-block;
-    background-color: #333333;
+    background-color: #6f6c6c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -406,7 +420,7 @@ body
 }
 
 .card-content a:hover {
-    background-color: #555;
+    background-color: #3b3737;
 }
 
 
@@ -415,3 +429,5 @@ body
         grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
     }
 }
+
+
