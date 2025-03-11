@@ -352,15 +352,24 @@ body
 
 /* Project card */
 .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /*
     max-width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    border: 1px solid;
+    border: 1px solid;*/
 }
 
-.card h3 {
+.card h3 {  
     color: #fff;
 }
 
@@ -372,6 +381,7 @@ body
 .card-image img {
     width: 100%;
     height: auto;
+    object-fit: cover;
     transition: all 0.3s ease-in-out;
 }
 
@@ -383,6 +393,7 @@ body
     padding: 20px;
     position: absolute;
     bottom: 0;
+    padding:15px;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -402,6 +413,10 @@ body
 }
 
 .card-content p {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    max-height: 100px;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -409,6 +424,16 @@ body
 
 .card-content a {
     display: inline-block;
+    background: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+
+    /*display: inline-block;
     background-color: #6f6c6c;
     color: #fff;
     border: none;
@@ -417,11 +442,13 @@ body
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;*/
 }
 
 .card-content a:hover {
-    background-color: #3b3737;
+    background: #ddd;
+
+    /*background-color: #3b3737;*/
 }
 
 
