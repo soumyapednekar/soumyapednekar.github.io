@@ -452,6 +452,7 @@ body
 }
 
 
+
 @media (max-width: 1200px) {
     .project-grid{
         grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
@@ -459,3 +460,58 @@ body
 }
 
 
+/* Achievement  */
+/* Ensure the Achievements section is centered properly */
+#achievements {
+    text-align: center;
+    padding: 50px 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Style the achievement grid */
+.achievements-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style each achievement card */
+.achievement-card {
+    background: #fff;
+    border-left: 5px solid #ff4d6d;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust the width for consistency */
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Adjust heading size inside achievement cards */
+.achievement-card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.achievement-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Ensure responsive behavior */
+@media screen and (max-width: 768px) {
+    .achievements-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-card {
+        width: 90%; /* Makes it full width on smaller screens */
+    }
+}
