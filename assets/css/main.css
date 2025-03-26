@@ -2205,3 +2205,20 @@ input, select, textarea {
 
 		}
 	}
+
+
+/* type effect css */
+
+#typed-text::after {
+	content: '';
+	display: inline-block;
+	width: 1ch;
+	background-color: black;
+	margin-left: 2px;
+	animation: blink 0.8s infinite;
+  }
+
+  @keyframes blink {
+	0%, 50%, 100% { background-color: black; }
+	25%, 75% { background-color: transparent; }
+  }

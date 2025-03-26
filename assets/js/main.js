@@ -210,3 +210,22 @@
 		}
 
 })(jQuery);
+
+
+
+//scripting functions
+const text = "hi soumya, here.";
+	let index = 0;
+	const speed = 150; // typing speed in ms
+  
+	function typeEffect() {
+	  if (index < text.length) {
+		document.getElementById("typed-text").innerHTML += text.charAt(index);
+		index++;
+		setTimeout(typeEffect, speed);
+	  } else {
+		//nothing
+	  }
+	}
+  
+	window.onload = typeEffect;

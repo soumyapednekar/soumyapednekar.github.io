@@ -11,11 +11,46 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets\sass\new.sass"/>
 
-		<style>
-			
-		</style>
+<!--<style>
+			 #typed-text::after {
+					content: ' | ';
+					color:inherit;
+					background:none;
+					animation: blink 1s step-start infinite;
+					margin-left: 2px;
+					font-size: normal;
+					font-weight: inherit;
+				}
+
+				@keyframes blink {
+					50% { opacity: 0; }
+				}
+		  </style>
+		  
 	</head>
 	<body class="is-preload">
+
+ Scrip fot typing effect
+<script>
+	const text = "hi soumya, here.";
+	let index = 0;
+	const speed = 150; // typing speed in ms
+  
+	function typeEffect() {
+	  if (index < text.length) {
+		document.getElementById("typed-text").innerHTML += text.charAt(index);
+		index++;
+		setTimeout(typeEffect, speed);
+	  } else {
+		//nothing
+	  }
+	}
+  
+	window.onload = typeEffect;
+  </script>
+  
+    -->
+
 
 		<!-- Wrapper-->
 			<div id="wrapper">
@@ -39,9 +74,14 @@
 							<article id="home" class="panel intro">
 								
 									<header>
-										<div class="type"> 
+
+										<div class="type">
+											<span id="typed-text"></span>
+										  </div>
+										  
+										<!--<div class="type"> 
 											<span>hi, soumya here.</span> 
-										</div>
+										</div>-->
 										<div class="intro" style="font-family: 'Times New Roman', Times, serif;">As a Master's student in Information Systems at UMBC with a Bachelor's in IT, I excel in uncovering data-driven insights using  Python, Data Analysis, Data Visualization, and Machine Learning. My passion for data helps drive impactful business solutions. Outside of my studies, I love cooking, exploring new places, and experiencing different cultures. I'm always open to new opportunities and connections!</div>
 											<div class="resumedoc" style="text-align: right;font-size: 20px;font-family: 'Times New Roman', Times, serif;">
 												<a  target="_blank"href="document\disneysoumya pednekar_final.docx.pdf" ><b>Resume</b></a>

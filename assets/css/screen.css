@@ -504,6 +504,20 @@ body
     color: #555;
 }
 
+/* Style the typeeffect */
+#typed-text::after {
+    content: ' | ';
+    color:inherit;
+    background:none;
+    animation: blink 1s step-start infinite;
+    margin-left: 2px;
+    
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
 /* Ensure responsive behavior */
 @media screen and (max-width: 768px) {
     .achievements-grid {
