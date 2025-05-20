@@ -214,7 +214,7 @@
 
 
 //scripting functions
-const text = "hi soumya, here.";
+const text = "hi, soumya here.";
 	let index = 0;
 	const speed = 150; // typing speed in ms
   
