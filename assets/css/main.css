@@ -2222,3 +2222,45 @@ input, select, textarea {
 	0%, 50%, 100% { background-color: black; }
 	25%, 75% { background-color: transparent; }
   }
+
+
+
+/* Table tech staack*/
+.skills-table {
+  width: 100%;              /* fill your container */
+  border-collapse: collapse;/* remove default gaps */
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 0.75rem 1.5rem;   /* a bit more breathing room */
+  vertical-align: top;      /* line up at the top of their row */
+  text-align: left;
+}
+
+.skills-table th {
+  width: 180px;             /* reserve enough for your longest label */
+  white-space: nowrap;      /* keep “Programming Languages” on one line */
+  font-weight: 600;
+  color: #444;
+}
+
+.skills-table td {
+  /* no white-space override—lets it wrap naturally */
+  color: #666;
+  line-height: 1.4;         /* improves readability on wrapped lines */
+}
+
+/* optional breakpoint to stack on very narrow screens */
+@media (max-width: 480px) {
+  .skills-table th,
+  .skills-table td {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  .skills-table th {
+    margin-top: 1.5rem;
+    background: #f9f9f9;
+  }
+}
